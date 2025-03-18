@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to my portfolio website!</h1>
+        <nav>
+            <ul>
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="projects.html">Projects</a></li> <!--Link to Projects page-->
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about-me">
+            <h2>About me</h2>
+            <p>
+                Hey there, I'm Ian Cyril, a fullstack developer.<br>
+                My passion for software engineering started when I first learned Python programming out of curiosity on YouTube<br>
+                I took a short Python course by Mosh Hamedani and fell in love with stroking keys on my keyboard<br>
+                I decided to major in full-stack development when I first learned about JavaScript<br>
+                My goal is to own my own software development company<br>
+                I also aim to learn more software skills and grow my skillset.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="projects-container">
+                <article class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h3>Travel Agency Page</h3>
+                            <button class="flip-button">🔄</button>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>
+                                I worked on a web project for a travel agency to enable clients to book travels online
+                            </p>
+                            <button class="flip-button">🔄</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h3>Event Hub</h3>
+                            <button class="flip-button">🔄</button>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>
+                                I recently worked on an event hub page where various technology & software related events could be posted.<br>
+                                This will inform tech enthusiasts of upcoming events and also help them get info on past events.
+                            </p>
+                            <button class="flip-button">🔄</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h3>Cat Blog Page</h3>
+                            <button class="flip-button">🔄</button>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>
+                                For practice & fun, I worked on a cat blog page for a cat, Mr. Whiskers.
+                            </p>
+                            <button class="flip-button">🔄</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <p><a href="projects.html">Click here to view visual representations of the projects</a></p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <div class="form-row">
+                    <label for="name">Name:</label>
+                    <input type="input" id="name" name="name">
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input required type="email" id="email" name="email" placeholder="example@gmail.com">
+                </div>
+
+                <div class="form-row">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Enter your message here..."></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <script src="index.js"></script>
+    </main>
+
+    <footer>
+       <p>IanCyril Muriuki</p>
+       <p>All rights reserved</p>
+       <p><a href="https://github.com/Iancyril02">Github</a></p>
+    </footer>
+</body>
+</html>
